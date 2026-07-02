@@ -1,0 +1,29 @@
+Color Palette
+
+Primary Green
+
+#1B5E20
+
+Dark Green
+
+#0D3B17
+
+Light Green
+
+#E8F5E9
+
+Brown
+
+#6D4C41
+
+Cream Background
+
+#FAF7F2
+
+White
+
+#FFFFFF
+
+Dark Text
+
+#222222

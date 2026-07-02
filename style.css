@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Style+Script&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Style+Script&family=Tangerine:wght@400;700&display=swap');
+
+/* Remove default spacing */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* fonts */
+
+body{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.cursive{
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* body */
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 18px 50px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+    box-shadow: inset;
+    background-color: #0D3B17;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: #D9BE82;
+}
+nav h1{
+    color: #D9BE82;
+    font-size: 2rem;
+}
