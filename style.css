@@ -54,3 +54,14 @@ nav h1{
     color: #D9BE82;
     font-size: 2rem;
 }
+
+/* hero section */
+
+.hero{
+    min-height: 100vh;
+    background-image: url("./images/bg-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -999;
+}
