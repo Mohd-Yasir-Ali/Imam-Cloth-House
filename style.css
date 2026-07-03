@@ -26,11 +26,12 @@ body{
 /* body */
 
 nav{
+    position: relative;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 18px 50px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+    padding: 10px 50px;
+    box-shadow: 0px 9px 7px rgba(0,0,0,0.4);
     box-shadow: inset;
     background-color: #0D3B17;
 }
@@ -52,7 +53,7 @@ nav ul li a:hover{
 }
 nav h1{
     color: #D9BE82;
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 
 /* hero section */
@@ -61,7 +62,42 @@ nav h1{
     min-height: 100vh;
     background-image: url("./images/bg-image.png");
     background-size: cover;
-    background-position: center;
+    background-position: center 90%;
     background-repeat: no-repeat;
     z-index: -999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.front-svg{
+    /* height: 10px; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20vw;
+    margin: 5vh 0 2vh 0;
+}
+.hero div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero div h2{
+    color: #b98c27;
+    letter-spacing: 3px;
+}
+.hero div h1{
+    color: #0D3B17;
+    font-size: 3rem;
+}
+.divider{
+    width: 15vw;
+    padding-bottom: 10px;
+}
+
+/* products section*/
+
+.products{
+    height: 700px;
 }
