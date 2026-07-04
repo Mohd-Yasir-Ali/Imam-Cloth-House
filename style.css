@@ -95,6 +95,37 @@ nav h1{
     width: 15vw;
     padding-bottom: 10px;
 }
+.hero .hero-buttons-div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.herobuttons{
+    height: 2rem;
+    width: 8rem;
+    border-radius: 0.8rem;
+}
+.herobuttons:hover{
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: #031808;
+}
+.btn1{
+    background-color: #0D3B17;
+    color: white;
+    border: 0px;
+}
+.btn2{
+    border: 2px solid rgb(90, 60, 60);
+    background-color: transparent;
+    color:rgb(90, 60, 60);
+}
+.btn2:hover{
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
 
 /* products section*/
 
