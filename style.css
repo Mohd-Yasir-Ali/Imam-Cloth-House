@@ -116,11 +116,13 @@ nav h1{
     background-color: #0D3B17;
     color: white;
     border: 0px;
+    font-size: 0.9rem;
 }
 .btn2{
     border: 2px solid rgb(90, 60, 60);
     background-color: transparent;
     color:rgb(90, 60, 60);
+    font-size: 0.96rem;
 }
 .btn2:hover{
     border-color: rgb(0, 0, 0);
