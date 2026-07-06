@@ -11,11 +11,19 @@
     <header>
         <nav>
             <h1 class="cursive white">Imam Cloth House</h1>
-            <ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="" class="white">Products</a></li>
                 <li><a href="" class="white">About</a></li>
                 <li><a href="" class="white">Why Choose Us</a></li>
                 <li><a href="" class="white">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="hideonmobile"><a href="" class="white">Products</a></li>
+                <li class="hideonmobile"><a href="" class="white">About</a></li>
+                <li class="hideonmobile"><a href="" class="white">Why Choose Us</a></li>
+                <li class="hideonmobile"><a href="" class="white">Contact</a></li>
+                <li onclick=showSidebar() class="menu-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
@@ -32,37 +40,49 @@
                 <button class = "btn2 herobuttons"><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
             </div>
         </div>
-
     </section>
-        <h2>Our Products</h2>
 
-        <div class="product-container">
+    <section class="products-section">
+        <div id="pattern"></div>
+        <div class="products-content">
+            <img src="images\divider.png" alt="">
+            <h2>Our Products</h2>
 
-            <div class="card">
-                <h3>Product 1</h3>
-                <p>About section that will contain info about the product</p>
-                <button>Enquire Now</button>
+            <div class="product-container">
+
+                <div class="card">
+                    <img src="" alt="" class="product-images">
+                    <h3>Men's Fabrics</h3>
+                    <img src="images\divider.png" alt="" class="card-divider">
+                    <p>About section that will contain info about the product</p>
+                    <button class="cards-button">Enquire Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card">
+                    <img src="" alt="" class="product-images">
+                    <h3>Women's Fabrics</h3>
+                    <img src="images\divider.png" alt="" class="card-divider">
+                    <p>About section that will contain info about the product</p>
+                    <button class="cards-button">Enquire Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card">
+                    <img src="" alt="" class="product-images">
+                    <h3>Tadfeen Kits</h3>
+                    <img src="images\divider.png" alt="" class="card-divider">
+                    <p>About section that will contain info about the product</p>
+                    <button class="cards-button">Enquire Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
             </div>
-
-            <div class="card">
-                <h3>Product 2</h3>
-                <p>About section that will contain info about the product</p>
-                <button>Enquire Now</button>
-            </div>
-
-            <div class="card">
-                <h3>Product 3</h3>
-                <p>About section that will contain info about the product</p>
-                <button>Enquire Now</button>
-            </div>
-
         </div>
 
-    <section>
+    </section>
+
+    <section class="about-section">
+
 
     </section>
-    <section class="products">
-        <img src=".\images\top line.svg" alt="">
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
