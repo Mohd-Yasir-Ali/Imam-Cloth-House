@@ -8,6 +8,9 @@
     padding:0;
     box-sizing:border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* fonts */
 
@@ -83,6 +86,14 @@ nav h1{
 .sidebar a{
     width: 100%;
     color: black;
+}
+.primary-green a{
+    display: flex;
+    color: #1B5E20;
+    padding-top: 1.5rem;
+}
+.primary-green a:hover{
+    color: #0D3B17;
 }
 /* hero section */
 
@@ -259,11 +270,56 @@ nav h1{
 }
 
 /* about section */
+
 .about-section{
     display: flex;
-    flex-direction: column;
-    height: 1500;
+    background-color:#fde1ae;
+    justify-content: center;
+    gap: 100px;
 }
+.about-image img{
+    height: 500px;
+}
+.about-divider{
+    width: 20vw;
+}
+.about-divider-2{
+    width: 50vw;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    padding-top: 40px;
+}
+.about-us-heading{
+    font-size: 2.5rem;
+}
+.about-content h1{
+    color:#1B5E20;
+    font-size: 1rem;
+}
+#about-us-heading{
+    font-size: 2.2rem;
+}
+.about-content>p{
+    color:rgb(0, 0, 0);
+    padding: 5px 80px 20px 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    display: flex;
+}
+.individual-features{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 10px 0;
+}
+
+/* why ch */
 
 @media(max-width:1024px){
     .product-container{

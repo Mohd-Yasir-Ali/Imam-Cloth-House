@@ -12,14 +12,14 @@
         <nav>
             <h1 class="cursive white">Imam Cloth House</h1>
             <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="" class="white">Products</a></li>
-                <li><a href="" class="white">About</a></li>
-                <li><a href="" class="white">Why Choose Us</a></li>
-                <li><a href="" class="white">Contact</a></li>
+                <li onclick=hideSidebar() class="primary-green"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1B5E20"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="primary-green"><a href="#products" class="white">Products</a></li>
+                <li class="primary-green"><a href="" class="white">About</a></li>
+                <li class="primary-green"><a href="" class="white">Why Choose Us</a></li>
+                <li class="primary-green"><a href="" class="white">Contact</a></li>
             </ul>
             <ul>
-                <li class="hideonmobile"><a href="" class="white">Products</a></li>
+                <li class="hideonmobile"><a href="#products" class="white">Products</a></li>
                 <li class="hideonmobile"><a href="" class="white">About</a></li>
                 <li class="hideonmobile"><a href="" class="white">Why Choose Us</a></li>
                 <li class="hideonmobile"><a href="" class="white">Contact</a></li>
@@ -27,7 +27,7 @@
             </ul>
         </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="home">
         <img src=".\images\top line.png" alt="" class="front-svg">
         <div class="hero-text">
             <h2>Welcome To</h2>
@@ -42,7 +42,7 @@
         </div>
     </section>
 
-    <section class="products-section">
+    <section class="products-section" id="products">
         <div id="pattern"></div>
         <div class="products-content">
             <img src="images\divider.png" alt="">
@@ -80,8 +80,39 @@
     </section>
 
     <section class="about-section">
+        <div class="about-image">
+            <img src=".\images\aboutsectionimage.png" alt="">
+        </div>
+        <div class="about-content">
+            <div > <img class="about-divider" src=".\images\top line.png" alt=""></div>
+            <h1 id="about-us-heading">About Us</h1>
+            <p>Imam Cloth House is built on a foundation of trust, quality and tradition. We specialize in premium unstitched fabrics and complete Muslim tadfeen kits, crafted with care to meet your needs with dignity and respect.</p>
+            <div > <img class="about-divider-2" src=".\images\divider.png" alt=""></div>
+            
+            <div class="features">
+                <div class="individual-features">
+                    <h1>Trusted Quality</h1>
+                    <p>Carefully selected material for lasting comfort.</p>
+                </div>
+                <div class="individual-features">
+                    <h1>Traditional Values</h1>
+                    <p>Rooted in Islamic Values, serving with sincerity.</p>
+                </div>
+                <div class="individual-features">
+                    <h1>Customer Focused</h1>
+                    <p>Your satisfaction and trust are our priority</p>
+                </div>
+                <div class="individual-features">
+                    <h1>Reliable Service</h1>
+                    <p>Consistent quality and service you can depend on.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-
+    <section class="why-choose-us">
+        
     </section>
     <script src="script.js"></script>
 </body>
