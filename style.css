@@ -319,7 +319,7 @@ nav h1{
     padding: 20px 15px 10px 0;
 }
 
-/* why ch */
+/* why choose us */
 
 @media(max-width:1024px){
     .product-container{
@@ -339,6 +339,15 @@ nav h1{
     .individual-features h1{
         font-size: 0.9rem;
     }
+    .about-image img{
+        width: 30vw;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-section{
+        gap: 50px;
+    }
 }
 @media (max-width:929px) {
     .products-section{
@@ -349,9 +358,16 @@ nav h1{
     }
     .front-svg{width: 40vw;}
     .divider{width: 30vw;}
-}
-.about-image img{
-    height: 45vw;
+    .about-divider-2{
+        width: 40vw;
+    }
+    .about-section{
+        gap: 50px;
+    }
+    .about-image > img {   
+        width: 57vw;
+        height: 80vw;
+    }
 }
 @media (max-width: 805px) {
     .hideonmobile{
@@ -363,12 +379,100 @@ nav h1{
     .products-content>img{
         width: 60vw;
     }
-    .about-image>img{
-        display: none;
-    }
-}
-@media (max-width:749px) {
     
+}
+@media (max-width: 749px) {
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make children of about-content behave
+       like direct children of about-section */
+    .about-content {
+        display: contents;
+    }
+
+    /* 1. Top divider */
+    .about-content > div:first-child {
+        order: 1;
+        text-align: center;
+    }
+
+    /* 2. Heading */
+    #about-us-heading {
+        order: 2;
+    }
+
+    /* 3. Description */
+    .about-content > p {
+        order: 3;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* 4. Arch image */
+    .about-image {
+        order: 4;
+        
+    }
+
+    /* .about-image > img {
+        display: block;   
+        width: 57vw;
+        height: 80vw;
+        max-width: 320px;
+    } */
+
+    /* 5. Long divider */
+    .about-content > div:nth-of-type(2) {
+        order: 5;
+    }
+
+    .about-divider-2 {
+        width: 80vw;
+    }
+
+    /* 6. Features */
+    .features {
+        order: 6;
+        width: 90vw;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .individual-features {
+        padding: 15px 8px;
+        text-align: center;
+        border: 2px solid #D9BE82;
+        border-radius: 15px;
+        align-items: center;
+    }
+
+    .individual-features h1 {
+        font-size: 0.9rem;
+    }
+
+    .individual-features p {
+        font-size: 0.8rem;
+    }
+    .about-divider{
+        width: 60vw;
+    }
+    .about-divider-2{
+        width: 80vw;
+    }
+    .about-section{
+        gap: 0;
+        padding-top: 30px;
+    }
+    .about-svgs{
+        width: 11vw;
+    }
 }
 @media (max-width:619px) {
    .products-section{
@@ -376,6 +480,12 @@ nav h1{
     } 
     .card-divider{
         width: 35vw;
+    }
+    .about-image > img {
+        display: block;   
+        width: 57vw;
+        height: 80vw;
+        max-width: 320px;
     }
 }
 @media (max-width:450px) {
