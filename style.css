@@ -329,6 +329,16 @@ nav h1{
     .card{
         flex-wrap: wrap;
     }
+    .about-content>p{
+        padding: 5px 20px 20px 20px;
+    }
+    .individual-features{
+        padding: 10px 5px 7px 0px;
+        font-size: 0.7rem;
+    }
+    .individual-features h1{
+        font-size: 0.9rem;
+    }
 }
 @media (max-width:929px) {
     .products-section{
@@ -340,6 +350,9 @@ nav h1{
     .front-svg{width: 40vw;}
     .divider{width: 30vw;}
 }
+.about-image img{
+    height: 45vw;
+}
 @media (max-width: 805px) {
     .hideonmobile{
         display: none;
@@ -349,6 +362,9 @@ nav h1{
     }
     .products-content>img{
         width: 60vw;
+    }
+    .about-image>img{
+        display: none;
     }
 }
 @media (max-width:749px) {
