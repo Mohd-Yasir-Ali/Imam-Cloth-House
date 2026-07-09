@@ -312,11 +312,17 @@ nav h1{
 }
 .features{
     display: flex;
+    margin-bottom: 20px;
 }
 .individual-features{
     display: flex;
     flex-direction: column;
     padding: 20px 15px 10px 0;
+    align-items: center;
+    text-align: center; 
+}
+.about-svgs{
+    width: 5vw;
 }
 
 /* why choose us */
@@ -365,8 +371,7 @@ nav h1{
         gap: 50px;
     }
     .about-image > img {   
-        width: 57vw;
-        height: 80vw;
+        padding-top: 3vw;
     }
 }
 @media (max-width: 805px) {
@@ -378,6 +383,9 @@ nav h1{
     }
     .products-content>img{
         width: 60vw;
+    }
+    .about-image > img {   
+        padding-top: 7vw;
     }
     
 }
@@ -419,12 +427,9 @@ nav h1{
         
     }
 
-    /* .about-image > img {
-        display: block;   
-        width: 57vw;
-        height: 80vw;
-        max-width: 320px;
-    } */
+    .about-image > img {
+        padding-top: 0;
+    }
 
     /* 5. Long divider */
     .about-content > div:nth-of-type(2) {
@@ -509,6 +514,15 @@ nav h1{
     .divider{width: 50vw;}
     .products-content>img{
         width: 70vw;
+    }
+    .products-section{
+        height: 1200px;
+    }
+    .individual-features h1{
+        font-size: 0.8rem;
+    }
+    .individual-features P{
+        font-size: 0.7rem;
     }
 }
 @media (max-width:320px) {
