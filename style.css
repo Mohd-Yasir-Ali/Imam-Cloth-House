@@ -325,7 +325,89 @@ nav h1{
     width: 5vw;
 }
 
+
 /* why choose us */
+
+.why-choose-us-section{
+    background-color:#fff0d4;
+
+}
+.why-choose-us-div{
+    display: flex;
+    justify-content: center;
+    padding : 50px 50px 50px 50px;
+    
+}
+.contact{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.whychooseus{
+    padding-top: 50px;
+}
+.why-choose-us-item{
+    display: flex;
+    /* flex-direction: column; */
+    padding: 10px 0 10px 0;
+}
+.contact > div img{
+    width: 20vw;
+}
+.contact-item{
+    padding: 10px 0 10px;
+    display: flex;
+}
+.last-content > div img{
+    width: 20vw;
+}
+.last-content h1{
+    font-size: 2.5rem;
+    color: #0D3B17;
+    text-align: center;
+}
+.last-content{
+    padding: 0 40px 0 40px;
+}
+.last-content p{
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px 30px 50x 30px;
+}
+.follow-us{
+    padding: 30px 0 30px 0;
+    font-size: 1.7rem;
+}
+.whychooseus > div img{
+    width: 20vw;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vertical-line svg{
+    height: 10vh;
+}
+.contact-item h4, p {
+    margin-left: 8px;
+}
+.why-choose-us-item h4,p{
+    margin-left: 8px;
+}
+.why-choose-us-svgs{
+    width: 3vw;
+}
+.contact-icon{
+    font-size: 2vw;
+}
+.green{
+    color: #0D3B17;
+}
+
+
 
 @media(max-width:1024px){
     .product-container{
