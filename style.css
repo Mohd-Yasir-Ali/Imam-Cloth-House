@@ -324,6 +324,9 @@ nav h1{
 .about-svgs{
     width: 5vw;
 }
+.about-vertical-divider{
+    height: 20vh;
+}
 
 
 /* why choose us */
@@ -335,7 +338,7 @@ nav h1{
 .why-choose-us-div{
     display: flex;
     justify-content: center;
-    padding : 50px 50px 50px 50px;
+    padding : 50px 50px 0px 50px;
     
 }
 .contact{
@@ -346,7 +349,7 @@ nav h1{
     align-items: center;
 }
 .whychooseus{
-    padding-top: 50px;
+    padding: 50px 30px;
 }
 .why-choose-us-item{
     display: flex;
@@ -368,17 +371,22 @@ nav h1{
     color: #0D3B17;
     text-align: center;
 }
-.last-content{
-    padding: 0 40px 0 40px;
-}
 .last-content p{
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
-    padding: 5px 30px 50x 30px;
+}
+.cursive-2{
+    padding: 20px;
 }
 .follow-us{
     padding: 30px 0 30px 0;
     font-size: 1.7rem;
+    text-decoration: underline;
+}
+.social-media-icons{
+    padding: 20px;
+    font-size: 2rem;
+    color: #0D3B17;
 }
 .whychooseus > div img{
     width: 20vw;
@@ -388,8 +396,8 @@ nav h1{
     flex-direction: column;
     align-items: center;
 }
-.vertical-line svg{
-    height: 10vh;
+.vertical-divider svg{
+    height: 30vw;
 }
 .contact-item h4, p {
     margin-left: 8px;
@@ -408,7 +416,11 @@ nav h1{
 }
 
 
-
+@media(max-width:1490px){
+    .vertical-divider svg{
+    height: 500px;
+}
+}
 @media(max-width:1024px){
     .product-container{
         flex-wrap: wrap;
@@ -436,6 +448,12 @@ nav h1{
     .about-section{
         gap: 50px;
     }
+    .vertical-divider svg{
+    height: 550px;
+    }
+    .why-choose-us-svgs {
+        width: 10vw;
+    }
 }
 @media (max-width:929px) {
     .products-section{
@@ -455,6 +473,20 @@ nav h1{
     .about-image > img {   
         padding-top: 3vw;
     }
+    .social-media-icons{
+        font-size: 1.5rem;
+    }
+    .vertical-divider svg{
+        height: 750px;
+    }
+    .social-media-icons{
+        padding: 10px;
+    }
+}
+@media(max-width:836px){
+    .last-content p{
+        font-family: 2rem;
+    }
 }
 @media (max-width: 805px) {
     .hideonmobile{
@@ -469,7 +501,15 @@ nav h1{
     .about-image > img {   
         padding-top: 7vw;
     }
+    .last-content h1{
+        font-size: 1.8rem;
+    }
     
+}
+@media(max-width:767px){
+    .social-media-icons{
+        padding: 6px;
+    }
 }
 @media (max-width: 749px) {
 
@@ -590,6 +630,7 @@ nav h1{
 }
 @media(max-width:370px){
     .hero .hero-text h1{
+ 
         font-size: 2rem;
     }
     .front-svg{width: 60vw;}
@@ -611,4 +652,223 @@ nav h1{
     .cursive{
          font-size: 1.6rem;
     }
+}
+/* ==========================================
+   WHY CHOOSE US SECTION - MOBILE
+   ========================================== */
+@media(max-width:749px){
+.why-choose-us-div {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* MOBILE ORDER:
+   1. Center Content
+   2. Contact
+   3. Why Choose Us
+*/
+
+.last-content {
+    order: 1;
+}
+
+.contact {
+    order: 2;
+}
+
+.whychooseus {
+    order: 3;
+}
+
+
+/* Hide desktop vertical dividers */
+
+.vertical-divider {
+    display: none;
+}
+
+
+/* ==========================================
+   CENTER CONTENT
+   ========================================== */
+
+.last-content {
+    width: 100%;
+    padding: 20px 0 40px 0;
+}
+
+.last-content h1 {
+    font-size: 2rem;
+}
+
+.last-content > div img {
+    width: 50vw;
+    max-width: 250px;
+}
+
+.last-content p {
+    width: 90%;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-left: 0;
+}
+
+.cursive-2 {
+    padding: 20px 0;
+}
+
+.follow-us {
+    padding: 20px 0;
+}
+
+.social-media-icons {
+    padding: 12px;
+    font-size: 1.8rem;
+}
+
+
+/* ==========================================
+   CONTACT SECTION
+   ========================================== */
+
+.contact {
+    width: 100%;
+    padding: 40px 5%;
+
+    border-top: 1px solid #B08A3E;
+}
+
+.contact > h1 {
+    font-size: 1.8rem;
+    justify-content: center;
+}
+
+.contact > div:nth-child(2) img {
+    width: 50vw;
+    max-width: 250px;
+}
+
+.contact-item {
+    width: 100%;
+}
+
+
+/* Only contact information rows */
+
+.contact-item:nth-child(n+3) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px 5px;
+
+    border-bottom:
+        1px dashed rgba(6, 77, 50, 0.3);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+.contact-item img{
+    justify-content: center;
+}
+
+.contact-icon {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.3rem;
+
+    color: white;
+    background-color: #0D3B17;
+
+    border-radius: 50%;
+}
+
+.contact-item h4 {
+    margin: 0 0 3px 0;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+
+/* ==========================================
+   WHY CHOOSE US
+   ========================================== */
+
+.whychooseus {
+    width: 100%;
+    padding: 40px 5%;
+
+    border-top: 1px solid #B08A3E;
+}
+
+.whychooseus > h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.whychooseus > div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.whychooseus > div:nth-child(2) img {
+    width: 50vw;
+    max-width: 250px;
+}
+.contact > div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Feature rows */
+
+.why-choose-us-item:nth-child(n+3) {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px 5px;
+
+    border-bottom:
+        1px dashed rgba(6, 77, 50, 0.3);
+}
+
+.why-choose-us-item:last-child {
+    border-bottom: none;
+}
+
+.why-choose-us-svgs {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+}
+
+.why-choose-us-item h4 {
+    margin: 0 0 3px 0;
+}
+
+.why-choose-us-item p {
+    margin: 0;
+    line-height: 1.4;
+}
 }
