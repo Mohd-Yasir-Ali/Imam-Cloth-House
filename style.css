@@ -414,6 +414,51 @@ nav h1{
 .green{
     color: #0D3B17;
 }
+.footer{
+    background:#0d3b2f;
+    padding:35px 20px;
+    text-align:center;
+    color:white;
+}
+
+/* Divider */
+
+.footer-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.footer-divider .line{
+    width:180px;
+    height:1px;
+    background:#b58a3d;
+}
+
+/* Arabic Text */
+
+.footer-text{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#d4b26a;
+    font-size:2rem;
+    font-family:"Amiri", serif;
+}
+
+.footer-text i{
+    font-size:14px;
+}
+
+/* Copyright */
+
+.copyright{
+    color:white;
+    font-size:1.2rem;
+    letter-spacing:.5px;
+}
 
 
 @media(max-width:1490px){
@@ -871,4 +916,24 @@ nav h1{
     margin: 0;
     line-height: 1.4;
 }
+}
+@media (max-width:700px){
+
+    .footer-divider .line{
+        width:40px;
+    }
+
+    .footer-text{
+        font-size:1.4rem;
+    }
+
+    .copyright{
+        font-size:1rem;
+    }
+
+}
+@media(max-width:400px){
+    .footer-text{
+        font-size:1.2rem;
+    }
 }
