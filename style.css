@@ -302,6 +302,13 @@ nav h1{
     font-size: 1rem;
     border: none;
 }
+.cards-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
 .cards-button:hover{
     cursor: pointer;
     color: #705a21;
