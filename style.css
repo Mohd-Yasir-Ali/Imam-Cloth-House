@@ -109,63 +109,101 @@ nav h1{
     justify-content: flex-start;
     align-items: center;
 }
+
 .front-svg{
-    /* height: 10px; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 20vw;
     margin: 5vh 0 2vh 0;
 }
+
 .hero div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .hero div h2{
     color: #b98c27;
     letter-spacing: 3px;
 }
+
 .hero div h1{
     color: #0D3B17;
     font-size: 3rem;
 }
+
 .divider{
     width: 15vw;
     padding-bottom: 10px;
 }
+
 .hero .hero-buttons-div{
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin-top: 20px;
 }
+
+/* ========================= */
+/* HERO BUTTONS */
+/* ========================= */
+
 .herobuttons{
-    height: 2rem;
-    width: 8rem;
+    height: 2.2rem;
+    width: 9rem;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
     border-radius: 0.8rem;
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+    box-sizing: border-box;
 }
+
 .herobuttons:hover{
     cursor: pointer;
+    transform: translateY(-2px);
 }
-.btn1:hover{
-    background-color: #031808;
-}
+
+/* View Products */
+
 .btn1{
     background-color: #0D3B17;
     color: white;
-    border: 0px;
+    border: none;
     font-size: 0.9rem;
 }
+
+.btn1:hover{
+    background-color: #031808;
+}
+
+/* WhatsApp */
+
 .btn2{
     border: 2px solid rgb(90, 60, 60);
     background-color: transparent;
-    color:rgb(90, 60, 60);
-    font-size: 0.96rem;
+    color: rgb(90, 60, 60);
+    font-size: 0.9rem;
 }
+
 .btn2:hover{
-    border-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+    border-color: black;
+    color: black;
+}
+
+/* Icons */
+
+.herobuttons i{
+    font-size: 1rem;
 }
 
 /* products section*/
